@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "lexend deca", sans-serif;
+}
+
+.columns {
+  background-color: var(--Very-light-gray);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.column-1 {
+  background-color: var(--bright-orange);
+  min-height: 25rem;
+  max-width: 17rem;
+  padding: 2.5rem;
+  position: relative;
+  border-radius: 15px 0 0 15px;
+}
+.column-1 .image {
+  margin-bottom: 1.5rem;
+}
+.column-1 h1 {
+  color: var(--Very-light-gray);
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-family: "big shoulders display", sans-serif;
+}
+
+.column-1 p {
+  color: var(--Very-light-gray);
+  font-family: "lexend deca", sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.column-1 button {
+  font-family: "lexend deca", sans-serif;
+  position: absolute;
+  background: var(--Very-light-gray);
+  border: 2px solid var(--Very-light-gray);
+  text-align: center;
+  padding: 12px 18px;
+  bottom: 0;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  color: var(--bright-orange);
+}
+
+.column-2 {
+  background-color: var(--dark-cyan);
+  min-height: 25rem;
+  max-width: 17rem;
+  padding: 2.5rem;
+  position: relative;
+}
+
+.column-2 .image {
+  margin-bottom: 1.5rem;
+}
+
+.column-2 h1 {
+  color: var(--Very-light-gray);
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-family: big shoulders display, sans-serif;
+}
+
+.column-2 p {
+  color: var(--Very-light-gray);
+  font-family: "lexend deca", sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.column-2 button {
+  font-family: "lexend deca", sans-serif;
+  position: absolute;
+  background: var(--Very-light-gray);
+  border: 2px solid var(--Very-light-gray);
+  text-align: center;
+  padding: 12px 18px;
+  bottom: 0;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  color: var(--dark-cyan);
+}
+
+.column-3 {
+  background-color: var(--very-dark-cyan);
+  min-height: 25rem;
+  max-width: 17rem;
+  padding: 2.5rem;
+  position: relative;
+  border-radius: 0 15px 15px 0;
+}
+
+.column-3 .image {
+  margin-bottom: 1.5rem;
+}
+
+.column-3 h1 {
+  color: var(--Very-light-gray);
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-family: "big shoulders display", sans-serif;
+}
+
+.column-3 p {
+  color: var(--Very-light-gray);
+  font-family: "lexend deca", sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.column-3 button {
+  font-family: "lexend deca", sans-serif;
+  position: absolute;
+  background: var(--Very-light-gray);
+  border: 2px solid var(--Very-light-gray);
+  text-align: center;
+  padding: 12px 18px;
+  bottom: 0;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  color: var(--very-dark-cyan);
+}
+
+button:hover {
+  font-family: "lexend deca", sans-serif;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 950px) {
+  .columns {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+  .column-1 {
+    border-radius: 15px 15px 0 0;
+    min-width: 30rem;
+  }
+  .column-2 {
+    min-width: 30rem;
+  }
+  .column-3 {
+    border-radius: 0 0 15px 15px;
+    min-width: 30rem;
+  }
+}
